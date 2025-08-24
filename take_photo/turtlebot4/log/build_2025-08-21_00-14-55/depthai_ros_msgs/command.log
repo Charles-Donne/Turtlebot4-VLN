@@ -1,1 +1,0 @@
-Invoking command in '/home/turtlebot4/ros2_ws/depthai-ros-humble/build/depthai_ros_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/turtlebot4/ros2_ws/depthai-ros-humble/depthai_ros_msgs -DCMAKE_INSTALL_PREFIX=/home/turtlebot4/ros2_ws/depthai-ros-humble/install/depthai_ros_msgs
