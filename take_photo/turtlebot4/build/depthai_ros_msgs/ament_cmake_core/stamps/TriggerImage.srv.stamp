@@ -1,0 +1,5 @@
+bool compressed  # 是否需要压缩图像
+---
+sensor_msgs/Image image    # 返回的图像数据
+bool success              # 是否成功获取图像
+string message           # 额外的信息或错误描述
