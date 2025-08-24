@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>depthai_examples</name>
+  <version>2.11.2</version>
+  <description>Minimal package for PC-side image subscription and saving</description>
+
+  <!-- 维护者信息（保留基础信息，可根据实际情况修改） -->
+  <maintainer email="adam.serafin@luxonis.com">Adam Serafin</maintainer>
+  <author>Sachin Guruswamy</author>
+
+  <license>MIT</license>
+
+  <!-- 1. 编译工具依赖（仅保留必需的 ament_cmake） -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  
+  <!-- 2. 编译时依赖（仅保留图像保存节点必需项） -->
+  <depend>rclcpp</depend>                <!-- ROS 2 C++ 核心 -->
+  <depend>cv_bridge</depend>             <!-- ROS 图像 ↔ OpenCV 转换 -->
+  <depend>sensor_msgs</depend>           <!-- 图像消息类型（sensor_msgs/msg/Image） -->
+  <depend>depthai_bridge</depend>        <!-- DepthAI-ROS 桥接（兼容图像转换，若仅PC端订阅可保留） -->
+  <depend>depthai</depend>               <!-- DepthAI 核心库（若仅PC端订阅可删除，此处保留兼容） -->
+  <depend>libopencv-dev</depend>         <!-- OpenCV 开发库（图像保存必需） -->
+
+  <!-- 3. 执行时依赖（无额外必需项，删除所有冗余） -->
+  <!-- （原有的 robot_state_publisher、depth_image_proc 等均与图像保存无关，已删除） -->
+
+  <!-- 4. 包类型导出（必需） -->
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>
